@@ -1,3 +1,4 @@
+#**employee Attrition**
 Attrition Yes: indicates that the employee left the organisation for whatever cause (voluntary or involuntary), such as resignation, termination, death, or retirement.
 Attrition No: signifies that the employee is happy with his or her position in the same organisation. A daily fee is the cost of a single day's services for an individual. 
 Business travel occurs when an employee travels frequently or seldom for corporate business. Is this the reason for attrition?
@@ -13,7 +14,7 @@ how many years have they worked in the same position?
 How many years have passed since their previous promotion? 
 how long they have been working with the same management.
 
-Analysis
+**Analysis**
 We begin by looking for missing values. and discovered that the data has no missing values.
 Next we look for outliers that have questions about three attributes. MonthlyIncome, MonthlyRate, DailyRate. As a result, we employ the bx plot to identify outliers. Outliers in monthly income exist. As a result, we discard the observations that contain outliers.
 We observe the variable of interest. We can observe that the number of attrition is lower as compared to not having attrition. SMOTE can be used to handle this sort of unbalanced data. 
