@@ -1,30 +1,23 @@
-# Employee-Attrition
-Descriptive statistics for numerical and categorical data, 
-treating outliers, 
-univariate and bivariate analysis, 
-heatmap
-# Data Description
-Attrition Yes: means if the employee departure  from the organization for any reason (voluntary or involuntary), including resignation, termination, death or retirement.
-Attrition No: means employee continue with his or her designation in same company hapily.
-A daily rate is the billing cost for an individual's services for a single day.
-Buissness travel if the employee travels frequently or rarely on company's work. is that the reason to attrit.
-Employee distance: how many employees leave far from office, is that the reason for their attrition from company?
-Education and education field
-if the employee has some relationship issue so it would be the reason for attrition. so realtionship satisfaction rate has been given. rating is from 1 to 4 i.e., not satisfied to satisfied.
-stock option level: 0 means not having rights for purchase of company stock and 1: having rigjts on company stock exchange.
-Total working years of employee.
-Training time last year 0 months or 1, or 2 months
-work life balance 0: cant able to balance to able to balance.
-how many years at same company.
-how many years in same role which they are working.
-how many years have been gone since they got their last promotion.
-how many years they are working with the same manager.
+Attrition Yes: indicates that the employee left the organisation for whatever cause (voluntary or involuntary), such as resignation, termination, death, or retirement.
+Attrition No: signifies that the employee is happy with his or her position in the same organisation. A daily fee is the cost of a single day's services for an individual. 
+Business travel occurs when an employee travels frequently or seldom for corporate business. Is this the reason for attrition?
+Employee distance: how many employees leave far from the workplace, and is this the reason for their business attrition?
+Education and education area would be the reason for attrition if the employee has certain connection issues. 
+As a result, a relationship satisfaction rating has been assigned. Ratings range from 1 to 4, indicating dissatisfaction to satisfaction. 
+Stock option level: 0 signifies no rights to acquire business stock, and 1 means rights to trade firm stock on the stock exchange.
+Employee's total number of working years. 
+Last year's training time was 0 months, 1 month, or 2 months. 
+Work life Balance,0: from being unable to balance to being able to balance.
+How long have you been with the same company? 
+how many years have they worked in the same position? 
+How many years have passed since their previous promotion? 
+how long they have been working with the same management.
 
-# Analysis
-first we check for missing values. and found that there are no missing values in data.
-then next we check for outliers has doubts on 3 features DailyRate, MonthlyIncome, MonthlyRate. so we use bx plot for finding outliers. Montly income has some outliers. so we delete the observations having outliers.
-We Observe target variable. we can see that no. of attrition are less than as compare to not get attrition. we can use SMOTE for this type of imbalanced data.
-we see univariate analysis for each categorical feature.
-see the distribution of Distane from home with attrition. so that we can identify employees resign because they feel difficulty in coming to office.
-we drop the columns which we are not needed with like: Over18(all are Over18), Employee number, Emplyee count, Studyhours.
-then we find correlation matrix using heatmap.
+Analysis
+We begin by looking for missing values. and discovered that the data has no missing values.
+Next we look for outliers that have questions about three attributes. MonthlyIncome, MonthlyRate, DailyRate. As a result, we employ the bx plot to identify outliers. Outliers in monthly income exist. As a result, we discard the observations that contain outliers.
+We observe the variable of interest. We can observe that the number of attrition is lower as compared to not having attrition. SMOTE can be used to handle this sort of unbalanced data. 
+For each category characteristic, we show univariate analysis. 
+See the attrition distribution of Distane from home. so that we can identify individuals who resign because they find it difficult to come to work. 
+We remove the columns that are no longer required, such as Over18 (all are Over18), Employee number, Employee count, and Studyhours. 
+The correlation matrix is then discovered using a heatmap.
